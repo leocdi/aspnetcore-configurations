@@ -1,0 +1,14 @@
+﻿@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <hr />
+    <h4>Config</h4>
+    <p>MyConfigKey1 : @Configuration["MyConfigKey1"]</p>
+    <p>MyConfigKey2 : @Configuration["MyConfigKey2"]</p>
+
+</div>
